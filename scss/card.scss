@@ -1,0 +1,60 @@
+@import './variables.scss';
+
+.card {
+    border-radius: 15px;
+    padding: 15px;
+
+    max-width: 285px;
+}
+
+.card--white {
+    background-color: $white;
+}
+
+.card--grid {
+    display: grid;
+    row-gap: 20px;
+}
+
+.card__header {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card__header-img {
+    border-radius: 15px;
+}
+
+.card__body {
+    text-align: center;
+    padding: 10px;
+
+    display: grid;
+    row-gap: 20px;
+}
+
+.card__body--heading {
+    font-size: 18px;
+}
+
+.card__body--heading--blue {
+    color: $dark-blue;
+}
+
+.card__body--sub--lightgray {
+    color: $grayish-blue;
+}
+
+@media screen and (min-width: 1000px) {
+    .card--grid {
+        row-gap: 15px;
+    }
+
+    .card__body {
+        margin-bottom: 10px;
+    }
+    
+    .card__body--heading {
+        font-size: 22px;
+    }
+}
